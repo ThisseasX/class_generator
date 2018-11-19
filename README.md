@@ -34,12 +34,11 @@ C:\Users\User\Desktop\ClassGeneratorFiles
 ```
 
 ```
-public class CustomerRepositoryNHibernate : GenericRepository<int, Customer> : IRepository<Customer>
+public class CustomerRepositoryNHibernate : RepositoryNhibernate<int, Customer>, ICustomerRepository
 {
-	public CustomerRepositoryNHibernate()
-	{
-		base();
-	}
+    public CustomerRepositoryNHibernate() : base()
+    {
+    }
 }
 ```
 
